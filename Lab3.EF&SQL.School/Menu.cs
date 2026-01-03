@@ -1,4 +1,4 @@
-﻿using Lab3.EF_SQL.School;
+﻿using Lab4.School;
 using Lab4.School.Models;
 using Microsoft.Identity.Client;
 using System;
@@ -43,19 +43,19 @@ namespace Lab4.School
 						ClassStudents.ShowClassStudents();
 						break;
 					case "3":
-						//show student all information
+						//show student all information, new for assignment 4
 						ShowALLStudentInfo.Show();
 						break;
 					case "4":
 						AddStudent.AddNewStudent();
 						break;
 					case "5":
-						//grade student - UserAssertion transactions ifall något går fel?
+						//grade student - UserAssertion transactions ifall något går fel? new for assignment 4
 						SetGrades.GradeStudent();
 						break;
 					case "6":
 
-						//show all active classes 
+						//show all active classes  new for assignment 4
 						ShowActiveCourses.ShowCourse();
 						break;
 					case "7":
@@ -65,8 +65,7 @@ namespace Lab4.School
 						AddEmployee.AddNewEmployee();
 						break;
 					case "9":
-
-						// show ammount of personel in each role
+						// show ammount of personel in each role -new for assignment 4
 						CountEmployees.CountNumberofEmployees();
 						break;
 					case "10":
