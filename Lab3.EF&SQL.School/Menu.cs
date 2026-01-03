@@ -1,4 +1,6 @@
-﻿using Lab4.School.Models;
+﻿using Lab3.EF_SQL.School;
+using Lab4.School.Models;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -21,10 +23,14 @@ namespace Lab4.School
 
 				Console.WriteLine("[1] View list of all students.");
 				Console.WriteLine("[2] Get a list of students in a specific class.");
-				Console.WriteLine("[3] Enroll new student.");
-				Console.WriteLine("[4] View list of employees.");
-				Console.WriteLine("[5] Add newly hired employee.");
-				Console.WriteLine("[6] Exit menu.");
+				Console.WriteLine("[3] Show all student information.");
+				Console.WriteLine("[4] Enroll new student.");
+				Console.WriteLine("[5] Grade student.");
+				Console.WriteLine("[6] Show all classes");
+				Console.WriteLine("[7] View list of employees.");
+				Console.WriteLine("[8] Add newly hired employee.");
+				Console.WriteLine("[9] Show amount of personnel in each role.");
+				Console.WriteLine("[10] Exit menu.");
 
 				string? choice = Console.ReadLine();
 
@@ -37,15 +43,33 @@ namespace Lab4.School
 						ClassStudents.ShowClassStudents();
 						break;
 					case "3":
-						AddStudent.AddNewStudent();
+						//show student all information
+						ShowALLStudentInfo.Show();
 						break;
 					case "4":
-						ListEmployee.ListOfEmployees();
+						AddStudent.AddNewStudent();
 						break;
 					case "5":
-						AddEmployee.AddNewEmployee();
+						//grade student - UserAssertion transactions ifall något går fel?
+						SetGrades.GradeStudent();
 						break;
 					case "6":
+
+						//show all active classes 
+						ShowActiveCourses.ShowCourse();
+						break;
+					case "7":
+						ListEmployee.ListOfEmployees();
+						break;
+					case "8":
+						AddEmployee.AddNewEmployee();
+						break;
+					case "9":
+
+						// show ammount of personel in each role
+						CountEmployees.CountNumberofEmployees();
+						break;
+					case "10":
 						Console.WriteLine("Press any key to exit menu.");
 						Console.ReadKey();
 						isRunning = false;
