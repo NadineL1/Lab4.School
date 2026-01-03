@@ -1,14 +1,4 @@
-﻿using Lab4.School;
-using Lab4.School.Models;
-using Microsoft.Identity.Client;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Net.WebSockets;
-using System.Runtime.ConstrainedExecution;
-using System.Text;
-
-namespace Lab4.School
+﻿namespace Lab4.School
 {
 	internal class Menu
 	{
@@ -50,11 +40,10 @@ namespace Lab4.School
 						AddStudent.AddNewStudent();
 						break;
 					case "5":
-						//grade student - UserAssertion transactions ifall något går fel? new for assignment 4
+						//grade student - Use transactions ifall något går fel. new for assignment 4
 						SetGrades.GradeStudent();
 						break;
 					case "6":
-
 						//show all active classes  new for assignment 4
 						ShowActiveCourses.ShowCourse();
 						break;
@@ -76,11 +65,11 @@ namespace Lab4.School
 					default:
 						Console.WriteLine("Invalid choice. Please restart and only answer with the number associated with your requested action.");
 						break;
-				
+
 				}
 
 			}
 		}
-		 
+
 	}
 }
