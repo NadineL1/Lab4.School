@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lab3.EF_SQL.School
+namespace Lab4.School
 {
 	internal class CountEmployees
 	{
