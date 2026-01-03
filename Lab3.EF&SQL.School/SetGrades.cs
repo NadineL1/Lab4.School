@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab4.School.Data;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,7 +9,7 @@ namespace Lab4.School
 	{
 		static internal void GradeStudent()
 		{
-
+		
 		}
 	}
 }
