@@ -107,7 +107,10 @@ namespace Lab4.School
 			db.SaveChanges();
 			
 			Console.WriteLine($"Student {fName} {lName} enrolled in class {selectedClass.ClassName}.");
+
+			Console.WriteLine("Press any key to return to main menu.");
 			Console.ReadKey();
+
 		}
 	}
 }

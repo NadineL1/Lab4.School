@@ -120,7 +120,8 @@ namespace Lab4.School
 				Console.WriteLine("Grade setting was unsuccesful.");
 				Console.WriteLine(ex.Message);
 			}
-			Console.ReadKey();	
+			Console.WriteLine("Press any key to return to main menu.");
+			Console.ReadKey();
 		}
 	}
 }

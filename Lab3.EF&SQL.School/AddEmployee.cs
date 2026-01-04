@@ -59,6 +59,8 @@ namespace Lab4.School
 			db.SaveChanges();
 
 			Console.WriteLine($"Staff member {fName} {lName} added to staff list in role {selectedRole.Rname}.");
+
+			Console.WriteLine("Press any key to return to main menu.");
 			Console.ReadKey();
 
 		}

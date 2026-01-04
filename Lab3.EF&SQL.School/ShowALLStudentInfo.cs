@@ -42,6 +42,7 @@ namespace Lab4.School
 				Console.WriteLine("------");
 			}
 
+			Console.WriteLine("Press any key to return to main menu.");
 			Console.ReadKey();
 		}
 	}

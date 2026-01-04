@@ -47,6 +47,7 @@ namespace Lab4.School
 				Console.WriteLine($"ID: {s.Id}||Firstname: {s.Fname}||Lastname: {s.Lname} ");
 			}
 
+			Console.WriteLine("Press any key to return to main menu.");
 			Console.ReadKey();
 		}
 	}

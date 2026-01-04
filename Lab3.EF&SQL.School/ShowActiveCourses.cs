@@ -25,8 +25,8 @@ namespace Lab4.School
 				Console.WriteLine("There are no active courses right now.");
 			}
 
-				Console.ReadKey();
-
+			Console.WriteLine("Press any key to return to main menu.");
+			Console.ReadKey();
 		}
 	}
 }
